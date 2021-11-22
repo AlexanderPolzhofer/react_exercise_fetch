@@ -1,9 +1,11 @@
 import React from "react";
 
-function Content() {
+function Content(props) {
     return (<div>
-
-    </div>  );
+        <p>{props.firstName}</p>
+        <p>{props.lastName}</p>
+        <img src={props.image} alt="randomUserImage"></img>
+    </div>);
 }
 
 export default Content;
